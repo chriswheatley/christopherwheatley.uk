@@ -1,0 +1,25 @@
+{
+  "name": "christopher-wheatley-portfolio",
+  "description": "source for christopherwheatley.uk",
+  "private": true,
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
+  "husky": { 
+    "hooks": { 
+      "pre-commit": "pretty-quick --staged" 
+    } 
+  },  
+  "dependencies": {
+    "gatsby": "2.0.0",
+    "react": "16.5.1",
+    "react-dom": "16.5.1"
+  },
+  "devDependencies": {
+    "husky": "1.1.2",
+    "prettier": "1.14.3",
+    "pretty-quick": "1.8.0"
+  }
+}
