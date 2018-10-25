@@ -12,6 +12,8 @@
   "dependencies": {
     "gatsby": "2.0.0",
     "gatsby-plugin-react-helmet": "3.0.0",
+    "gatsby-plugin-sass": "2.0.1",
+    "node-sass": "4.9.4",
     "prop-types": "15.6.2",
     "react": "16.5.1",
     "react-dom": "16.5.1",
