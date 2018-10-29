@@ -1,0 +1,20 @@
+@import '../styles/mixins/limit-width';
+
+html {
+  /*
+    Using a default font size of 10px makes working with rem units easier and
+    avoids issues where measurements in px do not divide cleanly into rem.
+  */
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
