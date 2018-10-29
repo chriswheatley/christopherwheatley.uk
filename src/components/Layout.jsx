@@ -12,7 +12,7 @@ const defaultProps = {
   children: '',
 };
 
-function DefaultLayout({ children }) {
+function Layout({ children }) {
   return (
     <StaticQuery
       query={graphql`
@@ -40,7 +40,7 @@ function DefaultLayout({ children }) {
   );
 }
 
-DefaultLayout.propTypes = propTypes;
-DefaultLayout.defaultProps = defaultProps;
+Layout.propTypes = propTypes;
+Layout.defaultProps = defaultProps;
 
-export default DefaultLayout;
+export default Layout;

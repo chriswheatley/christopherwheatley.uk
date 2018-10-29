@@ -1,8 +1,8 @@
 import React from 'react';
-import DefaultLayout from '../components/DefaultLayout';
+import Layout from '../components/Layout';
 
 export default () => (
-  <DefaultLayout>
+  <Layout>
     <h1>Hello World!</h1>
-  </DefaultLayout>
+  </Layout>
 );
