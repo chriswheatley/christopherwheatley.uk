@@ -3,6 +3,6 @@ import Layout from '../components/Layout';
 
 export default () => (
   <Layout>
-    <h1>About</h1>
+    <h1>Not Found</h1>
   </Layout>
 );
