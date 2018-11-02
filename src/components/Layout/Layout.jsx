@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Header from '../Header';
+import Footer from '../Footer';
 import './Layout.scss';
 
 
@@ -21,6 +22,7 @@ function Layout({ children }) {
       </Helmet>
       <Header />
       { children }
+      <Footer />
     </>
   );
 }
