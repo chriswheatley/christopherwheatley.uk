@@ -1,0 +1,26 @@
+.Header {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  &__brand {
+    flex-grow: 1;
+    font-size: 1.25rem;
+
+    @media(min-width: 480px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__link {
+    padding: 1rem;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+}
