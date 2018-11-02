@@ -4,6 +4,11 @@ html {
     avoids issues where measurements in px do not divide cleanly into rem.
   */
   font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -12,6 +17,3 @@ body {
   padding: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
