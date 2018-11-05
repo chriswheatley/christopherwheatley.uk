@@ -1,12 +1,10 @@
 ---
+  title: Computer Science | BSc (Hons)
   organisation: University of Sussex
   category: education
   startYear: 2010
   endYear: 2013
 ---
-
-Computer Science | BSc (Hons)
-===
 
 **Courses include:** Software Engineering, Web Computing, Human Computer Interaction and Further
 Programming.

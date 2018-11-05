@@ -1,11 +1,9 @@
 ---
+  title: Other
   category: education
   startYear: 2006
   endYear: 2010
 ---
-
-Other
-===
 
 | Qualification Level | Subjects                                                                 |
 | --------------------| -------------------------------------------------------------------------|

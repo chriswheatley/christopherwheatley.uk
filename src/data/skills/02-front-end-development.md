@@ -1,8 +1,6 @@
 ---
+  title: Front End Development
   category: skills
 ---
-
-Front End Development
-===
 
 Javascript, CSS, HTML, AngularJS, Bootstrap, Gulp and Grunt.

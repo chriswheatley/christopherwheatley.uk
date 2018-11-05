@@ -1,12 +1,10 @@
 ---
+  title: Developer
   organisation: Lighthouse Learning
   category: jobs
   startYear: 2013
   endYear: 2018
 ---
-
-Developer | Lighthouse Learning
-===
 
 Lighthouse Learning provides services to schools and individuals in the ed-tech sector. This has
 included iOS apps built with web technologies and an online subscription service.
