@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import PageMetadata from '../components/PageMetadata';
+import SkillList from '../components/SkillList';
 
 export default () => (
   <Layout>
@@ -18,6 +19,7 @@ export default () => (
           </p>
           <section>
             <h2>Skills</h2>
+            <SkillList />
           </section>
           <section>
             <h2>Employment</h2>
