@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import PageMetadata from '../components/PageMetadata';
 import SkillList from '../components/SkillList';
 import EmploymentHistory from '../components/EmploymentHistory';
+import EducationHistory from '../components/EducationHistory';
 
 export default () => (
   <Layout>
@@ -28,6 +29,7 @@ export default () => (
           </section>
           <section>
             <h2>Education</h2>
+            <EducationHistory />
           </section>
           <section>
             <h2>Interests</h2>
