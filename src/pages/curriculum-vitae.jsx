@@ -4,6 +4,7 @@ import PageMetadata from '../components/PageMetadata';
 import SkillList from '../components/SkillList';
 import EmploymentHistory from '../components/EmploymentHistory';
 import EducationHistory from '../components/EducationHistory';
+import InterestList from '../components/InterestList';
 
 export default () => (
   <Layout>
@@ -33,6 +34,7 @@ export default () => (
           </section>
           <section>
             <h2>Interests</h2>
+            <InterestList />
           </section>
         </section>
       </article>
