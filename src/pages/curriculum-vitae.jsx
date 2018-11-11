@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import PageMetadata from '../components/PageMetadata';
 import SkillList from '../components/SkillList';
+import EmploymentHistory from '../components/EmploymentHistory';
 
 export default () => (
   <Layout>
@@ -23,6 +24,7 @@ export default () => (
           </section>
           <section>
             <h2>Employment</h2>
+            <EmploymentHistory />
           </section>
           <section>
             <h2>Education</h2>
