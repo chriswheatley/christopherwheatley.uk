@@ -19,7 +19,7 @@ function Header() {
         <div className="Header">
           <div className="Header__container constrained">
             <div className="Header__brand" to="/">
-              <h1 className="Header__title">{data.site.siteMetadata.title}</h1>
+              <div className="Header__title">{data.site.siteMetadata.title}</div>
               <div className="Header__subtitle">{data.site.siteMetadata.subtitle}</div>
             </div>
             <nav>
