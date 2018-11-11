@@ -16,7 +16,7 @@ function Header() {
         }
       `}
       render={data => (
-        <header className="Header">
+        <div className="Header">
           <div className="Header__container constrained">
             <div className="Header__brand" to="/">
               <h1 className="Header__title">{data.site.siteMetadata.title}</h1>
@@ -30,7 +30,7 @@ function Header() {
               </div>
             </nav>
           </div>
-        </header>
+        </div>
       )}
     />
   );
