@@ -1,16 +1,6 @@
-$footer-height: 6rem;
-
 .Footer {
-  padding-bottom: $footer-height;
-  &__container {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: $footer-height;
-    padding: 2rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }

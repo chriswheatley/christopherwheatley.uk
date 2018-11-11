@@ -1,3 +1,5 @@
+$footer-height: 6rem;
+
 html {
   /*
     Using a default font size of 10px makes working with rem units easier and
@@ -20,4 +22,18 @@ body {
 .constrained {
   max-width: 120rem;
   margin: 0 auto;
+}
+
+.Layout {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: $footer-height;
+}
+
+.Layout__footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: $footer-height;
 }
