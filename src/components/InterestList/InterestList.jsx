@@ -43,7 +43,12 @@ function InterestList() {
           return <li key={id} dangerouslySetInnerHTML={{ __html: html }} />;
         });
 
-        return <ul>{interestItems}</ul>;
+        return (
+          <section>
+            <h2>Interests</h2>
+            <ul>{interestItems}</ul>
+          </section>
+        );
       }}
     />
   );

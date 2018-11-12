@@ -48,7 +48,12 @@ function SkillList() {
           );
         });
 
-        return <ul className="SkillList">{ skillItems }</ul>;
+        return (
+          <section>
+            <h2>Skills</h2>
+            <ul className="SkillList">{ skillItems }</ul>
+          </section>
+        );
       }}
     />
   );

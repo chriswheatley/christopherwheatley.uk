@@ -61,7 +61,12 @@ function EmploymentHistory() {
           );
         });
 
-        return <>{employmentItems}</>;
+        return (
+          <section>
+            <h2>Employment</h2>
+            {employmentItems}
+          </section>
+        );
       }}
     />
   );
