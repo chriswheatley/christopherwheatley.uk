@@ -1,0 +1,55 @@
+.skillList {
+  list-style: none;
+  margin: 1rem 0 0 0;
+  padding: 0;
+
+  &__card {
+    padding: 1.5rem;
+    background: whitesmoke;
+
+  }
+
+  &__cardHeader {
+    font-size: 1.8rem;
+  }
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &__card {
+    margin: 0.5rem 1rem 0.5rem 0;
+    width: 100%;
+
+    @media (min-width: 600px) {
+      width: calc(50% - 1rem);
+    }
+
+    @media (min-width: 900px) {
+      width: calc(33.33% - 1.5rem);
+    }
+  }
+
+  // Use CSS Grid if supported.
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+
+    &__card {
+      margin: 0;
+      min-width: auto;
+      width: auto;
+    }
+
+    @media (min-width: 600px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 900px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+  }
+}
