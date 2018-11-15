@@ -1,0 +1,28 @@
+/*
+    A full width container that restricts the width of the its inner content to improve the
+    readability.
+*/
+.panel {
+  padding: 1.5rem;
+
+  &__header,
+  &__body {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+  &--pageHeader {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: whitesmoke;
+  }
+
+  &--pageHeader &__header {
+    font-size: 5rem;
+  }
+
+  &--pageHeader &__body {
+    padding-top: 1.5rem;
+  }
+}

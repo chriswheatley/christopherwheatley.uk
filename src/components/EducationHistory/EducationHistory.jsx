@@ -61,12 +61,7 @@ function EducationHistory() {
           );
         });
 
-        return (
-          <section>
-            <h2>Education</h2>
-            {educationItems}
-          </section>
-        );
+        return educationItems;
       }}
     />
   );

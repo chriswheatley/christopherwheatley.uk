@@ -35,8 +35,8 @@ function EmploymentHistory() {
           }
         }
       `}
-      render={({ allMarkdownRemark }) => {
-        const employmentItems = allMarkdownRemark.edges.map((edge) => {
+      render={(({ allMarkdownRemark }) => (
+        allMarkdownRemark.edges.map((edge) => {
           const { id, html } = edge.node;
           const {
             title,
@@ -47,6 +47,7 @@ function EmploymentHistory() {
 
           const heading = `${title} | ${organisation}`;
           const dates = `${startYear} - ${endYear}`;
+
           return (
             <section key={id}>
               <h3>{heading}</h3>
@@ -59,15 +60,8 @@ function EmploymentHistory() {
               <p dangerouslySetInnerHTML={{ __html: html }} />
             </section>
           );
-        });
-
-        return (
-          <section>
-            <h2>Employment</h2>
-            {employmentItems}
-          </section>
-        );
-      }}
+        })
+      ))}
     />
   );
 }
