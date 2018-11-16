@@ -20,13 +20,11 @@ function Layout({ children }) {
       <Helmet>
         <html lang="en-GB" />
       </Helmet>
-      <header className="Layout__header">
-        <Header />
-      </header>
+      <Header />
       <main className="Layout__content">{ children }</main>
-      <footer className="Layout__footer">
+      <div className="Layout__footer">
         <Footer />
-      </footer>
+      </div>
     </div>
   );
 }
