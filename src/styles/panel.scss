@@ -4,14 +4,23 @@
 */
 
 @import './colour';
-
 .panel {
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
 
   &__header,
   &__body {
     width: 100%;
     max-width: 120rem;
+    margin: 2rem auto;
+
+    //Margins won't collapse due to padding.
+    &:first-child, {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__header {
@@ -27,9 +36,6 @@
 
   &--pageHeader &__header {
     font-size: 5rem;
-  }
-
-  &--pageHeader &__body {
-    padding-top: 1.5rem;
+    margin-top: 0;
   }
 }
