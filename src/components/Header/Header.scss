@@ -1,5 +1,12 @@
+@import '../../styles/colour';
+
+$text-colour: hsla(0, 0, 100, 0.8);
+$text-colour-highlight: hsl(0, 0, 100);
+
 .Header {
   padding: 1.5rem;
+  background-color: $primary-500;
+  color: $text-colour;
 
   &__container {
     display: flex;
@@ -10,7 +17,7 @@
 
   &__title {
     flex-grow: 1;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 0;
   }
 
@@ -18,6 +25,13 @@
     padding: 1rem;
     text-decoration: none;
     text-transform: uppercase;
+    color: $text-colour;
+  }
+
+  &__link:active,
+  &__link:hover,
+  &__.active {
+    color: $text-colour-highlight;
   }
 
 }

@@ -2,6 +2,9 @@
     A full width container that restricts the width of the its inner content to improve the
     readability.
 */
+
+@import './colour';
+
 .panel {
   padding: 1.5rem;
 
@@ -15,7 +18,8 @@
   &--pageHeader {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background-color: whitesmoke;
+    background-color: $primary-500;
+    color: #fff;
   }
 
   &--pageHeader &__header {
