@@ -10,7 +10,6 @@ function Header() {
           site {
             siteMetadata {
               title
-              subtitle
             }
           }
         }
@@ -20,7 +19,6 @@ function Header() {
           <div className="Header__container constrained">
             <div className="Header__brand" to="/">
               <div className="Header__title">{data.site.siteMetadata.title}</div>
-              <div className="Header__subtitle">{data.site.siteMetadata.subtitle}</div>
             </div>
             <nav>
               <div>
