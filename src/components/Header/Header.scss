@@ -9,15 +9,10 @@
 
   &__brand {
     flex-grow: 1;
-    font-size: 1.25rem;
-
-    @media(min-width: 480px) {
-      font-size: 1.6rem;
-    }
   }
 
   &__title {
-    font-size: 1.5em;
+    font-size: 2rem;
     margin: 0;
   }
 
