@@ -1,5 +1,6 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
+import '../../styles/history.scss';
 
 /**
  * Display all job posts in reverse chronological order.
@@ -49,15 +50,17 @@ function EmploymentHistory() {
           const dates = `${startYear} - ${endYear}`;
 
           return (
-            <section key={id}>
-              <h3>{heading}</h3>
-              <p>{dates}</p>
+            <section className="history-item" key={id}>
+              <div className="history-item__header">
+                <h3 className="history-item__heading">{heading}</h3>
+                <p className="history-item__dates">{dates}</p>
+              </div>
               {/*
                 The html inserted here is trusted as it is static content added by gatsby during
                 build time.
               */}
               {/* eslint-disable-next-line react/no-danger */}
-              <p dangerouslySetInnerHTML={{ __html: html }} />
+              <p className="history-item__body" dangerouslySetInnerHTML={{ __html: html }} />
             </section>
           );
         })
