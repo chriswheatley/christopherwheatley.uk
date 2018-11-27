@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import '../../styles/skillList.scss';
+import '../../styles/skill-list.scss';
 import '../../styles/card.scss';
 
 /**
@@ -49,7 +49,7 @@ function SkillList() {
           );
         });
 
-        return <ul className="skillList">{skillItems}</ul>;
+        return <ul className="skill-list">{skillItems}</ul>;
       }}
     />
   );
