@@ -1,5 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
+import '../../styles/history.scss';
+import '../../styles/card.scss';
 
 /**
  * Display all education posts in reverse chronological order.
@@ -48,17 +50,17 @@ function EducationHistory() {
           const dates = `${startYear} - ${endYear}`;
 
           return (
-            <section className="history-item" key={id}>
-              <div className="history-item__header">
-                <h3 className="history-item__heading">{heading}</h3>
-                <p className="history-item__dates">{dates}</p>
+            <section key={id} className="card history-item">
+              <div className="card__header">
+                <h3 className="card__heading">{heading}</h3>
+                <p className="card__date">{dates}</p>
               </div>
               {/*
                 The html inserted here is trusted as it is static content added by gatsby during
                 build time.
               */}
               {/* eslint-disable-next-line react/no-danger */}
-              <p className="history-item__body" dangerouslySetInnerHTML={{ __html: html }} />
+              <div className="card__body" dangerouslySetInnerHTML={{ __html: html }} />
             </section>
           );
         });

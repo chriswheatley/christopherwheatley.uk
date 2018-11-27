@@ -1,6 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import '../../styles/history.scss';
+import '../../styles/card.scss';
 
 /**
  * Display all job posts in reverse chronological order.
@@ -36,8 +37,8 @@ function EmploymentHistory() {
           }
         }
       `}
-      render={(({ allMarkdownRemark }) => (
-        allMarkdownRemark.edges.map((edge) => {
+      render={(({ allMarkdownRemark }) => {
+        const employmentItems = allMarkdownRemark.edges.map((edge) => {
           const { id, html } = edge.node;
           const {
             title,
@@ -50,21 +51,23 @@ function EmploymentHistory() {
           const dates = `${startYear} - ${endYear}`;
 
           return (
-            <section className="history-item" key={id}>
-              <div className="history-item__header">
-                <h3 className="history-item__heading">{heading}</h3>
-                <p className="history-item__dates">{dates}</p>
+            <section className="card history-item" key={id}>
+              <div className="card__header">
+                <h3 className="card__heading">{heading}</h3>
+                <p className="card__date">{dates}</p>
               </div>
               {/*
                 The html inserted here is trusted as it is static content added by gatsby during
                 build time.
               */}
               {/* eslint-disable-next-line react/no-danger */}
-              <p className="history-item__body" dangerouslySetInnerHTML={{ __html: html }} />
+              <p className="card__body" dangerouslySetInnerHTML={{ __html: html }} />
             </section>
           );
-        })
-      ))}
+        });
+
+        return employmentItems;
+      })}
     />
   );
 }

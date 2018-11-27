@@ -1,6 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import '../../styles/skillList.scss';
+import '../../styles/card.scss';
 
 /**
  * Display all posts in the skills category in a grid where each skill has a title and a
@@ -36,14 +37,14 @@ function SkillList() {
           const { title } = edge.node.frontmatter;
 
           return (
-            <li key={id} className="skillList__card">
-              <b className="skillList__cardHeader">{title}</b>
+            <li key={id} className="card card--primary">
+              <b className="card__header">{title}</b>
               {/*
                 The html inserted here is trusted as it is static content added by gatsby during
                 build time.
               */}
               {/* eslint-disable-next-line react/no-danger */}
-              <div className="skillList__cardBody" dangerouslySetInnerHTML={{ __html: html }} />
+              <div className="card__body" dangerouslySetInnerHTML={{ __html: html }} />
             </li>
           );
         });
