@@ -1,0 +1,30 @@
+@import '../styles/colour.scss';
+
+.markdown {
+  table {
+    min-width: 100%;
+    overflow: hidden;
+    border-radius: .5rem;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 1.2rem;
+  }
+
+  td {
+    border-top: 0.1rem solid $primary-200;
+  }
+
+  tbody tr:first-child td {
+    border-top: 0.2rem solid $primary-200;
+  }
+
+  thead {
+    color: $primary-600;
+    background-color: $primary-100;
+    font-size: 1.8rem;
+  }
+
+}

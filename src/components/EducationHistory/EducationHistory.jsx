@@ -2,6 +2,7 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import '../../styles/history.scss';
 import '../../styles/card.scss';
+import '../../styles/markdown.scss';
 
 /**
  * Display all education posts in reverse chronological order.
@@ -60,7 +61,7 @@ function EducationHistory() {
                 build time.
               */}
               {/* eslint-disable-next-line react/no-danger */}
-              <div className="card__body" dangerouslySetInnerHTML={{ __html: html }} />
+              <div className="card__body markdown" dangerouslySetInnerHTML={{ __html: html }} />
             </section>
           );
         });

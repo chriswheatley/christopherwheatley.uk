@@ -1,5 +1,6 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
+import '../../styles/markdown.scss';
 
 /**
  * Display all interest posts in list ordered alphabetically
@@ -40,7 +41,7 @@ function InterestList() {
            * build time.
           */
           // eslint-disable-next-line react/no-danger
-          return <li key={id} dangerouslySetInnerHTML={{ __html: html }} />;
+          return <li className="markdown" key={id} dangerouslySetInnerHTML={{ __html: html }} />;
         });
 
         return <ul>{interestItems}</ul>;

@@ -2,6 +2,7 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import '../../styles/skill-list.scss';
 import '../../styles/card.scss';
+import '../../styles/markdown.scss';
 
 /**
  * Display all posts in the skills category in a grid where each skill has a title and a
@@ -44,7 +45,7 @@ function SkillList() {
                 build time.
               */}
               {/* eslint-disable-next-line react/no-danger */}
-              <div className="card__body" dangerouslySetInnerHTML={{ __html: html }} />
+              <div className="card__body markdown" dangerouslySetInnerHTML={{ __html: html }} />
             </li>
           );
         });
