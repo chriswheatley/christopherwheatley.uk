@@ -62,7 +62,7 @@ function EmploymentHistory() {
                 build time.
               */}
               {/* eslint-disable-next-line react/no-danger */}
-              <p className="card__body markdown" dangerouslySetInnerHTML={{ __html: html }} />
+              <div className="card__body markdown" dangerouslySetInnerHTML={{ __html: html }} />
             </section>
           );
         });
