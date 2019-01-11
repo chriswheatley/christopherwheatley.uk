@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, graphql, StaticQuery } from 'gatsby';
-import './Header.scss';
+import '../../styles/header.scss';
 
 function Header() {
   return (
