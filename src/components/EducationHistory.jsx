@@ -1,25 +1,25 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import '../../styles/history.scss';
-import '../../styles/card.scss';
-import '../../styles/markdown.scss';
+import '../styles/history.scss';
+import '../styles/card.scss';
+import '../styles/markdown.scss';
 
 /**
- * Display all job posts in reverse chronological order.
+ * Display all education posts in reverse chronological order.
  */
-function EmploymentHistory() {
+function EducationHistory() {
   return (
     <StaticQuery
       query={graphql`
-        query EmploymentHistoryQuery {
-          allMarkdownRemark (
+        query EducationHistoryQuery {
+          allMarkdownRemark(
             filter: {
               frontmatter: {
-                category: { eq: "jobs" }
+                category: {eq: "education"}
               }
-            }
+            },
             sort: {
-              fields: [frontmatter___endYear]
+              fields: [frontmatter___endYear],
               order: DESC
             }
           ) {
@@ -38,21 +38,20 @@ function EmploymentHistory() {
           }
         }
       `}
-      render={(({ allMarkdownRemark }) => {
-        const employmentItems = allMarkdownRemark.edges.map((edge) => {
+      render={({ allMarkdownRemark }) => {
+        const educationItems = allMarkdownRemark.edges.map((edge) => {
           const { id, html } = edge.node;
           const {
             title,
-            organisation,
             startYear,
             endYear,
           } = edge.node.frontmatter;
 
-          const heading = `${title} | ${organisation}`;
+          const heading = `${title}`;
           const dates = `${startYear} - ${endYear}`;
 
           return (
-            <section className="card history-item" key={id}>
+            <section key={id} className="card history-item">
               <div className="card__header">
                 <h3 className="card__heading">{heading}</h3>
                 <p className="card__date">{dates}</p>
@@ -67,10 +66,10 @@ function EmploymentHistory() {
           );
         });
 
-        return employmentItems;
-      })}
+        return educationItems;
+      }}
     />
   );
 }
 
-export default EmploymentHistory;
+export default EducationHistory;

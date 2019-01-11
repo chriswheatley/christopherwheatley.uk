@@ -1,8 +1,8 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import '../../styles/skill-list.scss';
-import '../../styles/card.scss';
-import '../../styles/markdown.scss';
+import '../styles/skill-list.scss';
+import '../styles/card.scss';
+import '../styles/markdown.scss';
 
 /**
  * Display all posts in the skills category in a grid where each skill has a title and a

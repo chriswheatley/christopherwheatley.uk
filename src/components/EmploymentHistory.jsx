@@ -1,25 +1,25 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import '../../styles/history.scss';
-import '../../styles/card.scss';
-import '../../styles/markdown.scss';
+import '../styles/history.scss';
+import '../styles/card.scss';
+import '../styles/markdown.scss';
 
 /**
- * Display all education posts in reverse chronological order.
+ * Display all job posts in reverse chronological order.
  */
-function EducationHistory() {
+function EmploymentHistory() {
   return (
     <StaticQuery
       query={graphql`
-        query EducationHistoryQuery {
-          allMarkdownRemark(
+        query EmploymentHistoryQuery {
+          allMarkdownRemark (
             filter: {
               frontmatter: {
-                category: {eq: "education"}
+                category: { eq: "jobs" }
               }
-            },
+            }
             sort: {
-              fields: [frontmatter___endYear],
+              fields: [frontmatter___endYear]
               order: DESC
             }
           ) {
@@ -38,20 +38,21 @@ function EducationHistory() {
           }
         }
       `}
-      render={({ allMarkdownRemark }) => {
-        const educationItems = allMarkdownRemark.edges.map((edge) => {
+      render={(({ allMarkdownRemark }) => {
+        const employmentItems = allMarkdownRemark.edges.map((edge) => {
           const { id, html } = edge.node;
           const {
             title,
+            organisation,
             startYear,
             endYear,
           } = edge.node.frontmatter;
 
-          const heading = `${title}`;
+          const heading = `${title} | ${organisation}`;
           const dates = `${startYear} - ${endYear}`;
 
           return (
-            <section key={id} className="card history-item">
+            <section className="card history-item" key={id}>
               <div className="card__header">
                 <h3 className="card__heading">{heading}</h3>
                 <p className="card__date">{dates}</p>
@@ -66,10 +67,10 @@ function EducationHistory() {
           );
         });
 
-        return educationItems;
-      }}
+        return employmentItems;
+      })}
     />
   );
 }
 
-export default EducationHistory;
+export default EmploymentHistory;
