@@ -14,15 +14,9 @@ $text-colour-highlight: hsl(0, 0, 100);
 
   &__container {
     display: flex;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     align-items: center;
-  }
-
-
-  &__title {
-    flex-grow: 1;
-    font-size: 1.8rem;
-    margin: 0;
   }
 
   &__link {

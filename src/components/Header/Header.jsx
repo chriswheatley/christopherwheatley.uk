@@ -14,10 +14,9 @@ function Header() {
           }
         }
       `}
-      render={data => (
+      render={() => (
         <header className="Header">
           <div className="Header__container constrained">
-            <div className="Header__title" to="/">{data.site.siteMetadata.title}</div>
             <nav>
               <Link className="Header__link" to="/">About</Link>
               <Link className="Header__link" to="/contact">Contact</Link>
