@@ -16,13 +16,13 @@ const defaultProps = {
 
 function Layout({ children }) {
   return (
-    <div className="Layout">
+    <div className="layout">
       <Helmet>
         <html lang="en-GB" />
       </Helmet>
       <Header />
-      <main className="Layout__content">{ children }</main>
-      <div className="Layout__footer">
+      <main className="layout__content">{ children }</main>
+      <div className="layout__footer">
         <Footer />
       </div>
     </div>

@@ -3,7 +3,7 @@ import '../styles/footer.scss';
 
 function Footer() {
   return (
-    <footer className="Footer">
+    <footer className="footer">
       <div className="constrained">
         Built with&nbsp;
         <a href="https://www.gatsbyjs.org/">GatsbyJS</a>

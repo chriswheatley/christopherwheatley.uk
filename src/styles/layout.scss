@@ -24,14 +24,14 @@ body {
   margin: 0 auto;
 }
 
-.Layout {
+.layout {
   font-family: sans-serif;
   position: relative;
   min-height: 100vh;
   padding-bottom: $footer-height;
 }
 
-.Layout__footer {
+.layout__footer {
   position: absolute;
   left: 0;
   right: 0;

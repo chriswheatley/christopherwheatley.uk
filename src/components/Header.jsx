@@ -15,11 +15,11 @@ function Header() {
         }
       `}
       render={() => (
-        <header className="Header">
-          <div className="Header__container constrained">
+        <header className="header">
+          <div className="header__container constrained">
             <nav>
-              <Link className="Header__link" to="/">About</Link>
-              <Link className="Header__link" to="/contact">Contact</Link>
+              <Link className="header__link" to="/">About</Link>
+              <Link className="header__link" to="/contact">Contact</Link>
             </nav>
           </div>
         </header>
