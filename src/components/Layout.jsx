@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Header from './Header';
 import Footer from './Footer';
-import '../styles/layout.scss';
 
+import '../styles/layout.scss';
+import 'typeface-ubuntu';
 
 const propTypes = {
   children: PropTypes.node,
