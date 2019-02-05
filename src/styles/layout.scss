@@ -25,20 +25,22 @@ body {
 }
 
 .layout {
-  position: relative;
-  min-height: 100vh;
-  padding-bottom: $footer-height;
   font-family: 'open sans', sans-serif;
 
   & h1, h2, h3, h4, h5, h6 {
     font-family: 'ubuntu', sans-serif;
   }
-}
 
-.layout__footer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: $footer-height;
+  //Always keep the footer at the bottom of the page
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: $footer-height;
+
+  &__footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: $footer-height;
+  }
 }
