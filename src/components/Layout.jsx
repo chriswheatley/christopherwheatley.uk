@@ -6,6 +6,7 @@ import Footer from './Footer';
 
 import '../styles/layout.scss';
 import 'typeface-ubuntu';
+import 'typeface-open-sans';
 
 const propTypes = {
   children: PropTypes.node,
