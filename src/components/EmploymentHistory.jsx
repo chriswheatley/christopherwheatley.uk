@@ -8,6 +8,22 @@ import '../styles/markdown.scss';
  * Display all job posts in reverse chronological order.
  */
 function EmploymentHistory() {
+  /**
+   * Get the subtitle for an item in education history.
+   * @param {String} [organisation] Optional. The name of the organisation.
+   * @param {Number} startYear  The year when starting at the organisation.
+   * @param {Number} endYear    The year when leaving the organisation.
+   */
+  function getSubtitle(organisation, startYear, endYear) {
+    const dates = `${startYear} - ${endYear}`;
+
+    if (!organisation) {
+      return dates;
+    }
+
+    return `${organisation}, ${dates}`;
+  }
+
   return (
     <StaticQuery
       query={graphql`
@@ -48,13 +64,11 @@ function EmploymentHistory() {
             endYear,
           } = edge.node.frontmatter;
 
-          const subtitle = `${organisation}, ${startYear} - ${endYear}`;
-
           return (
             <section className="card history-item" key={id}>
               <div className="card__header">
                 <h3 className="card__title">{title}</h3>
-                <p className="card__subtitle">{subtitle}</p>
+                <p className="card__subtitle">{getSubtitle(organisation, startYear, endYear)}</p>
               </div>
               {/*
                 The html inserted here is trusted as it is static content added by gatsby during
