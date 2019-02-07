@@ -48,21 +48,20 @@ function EmploymentHistory() {
             endYear,
           } = edge.node.frontmatter;
 
-          const heading = `${title} | ${organisation}`;
-          const dates = `${startYear} - ${endYear}`;
+          const subtitle = `${organisation}, ${startYear} - ${endYear}`;
 
           return (
             <section className="card history-item" key={id}>
               <div className="card__header">
-                <h3 className="card__heading">{heading}</h3>
-                <p className="card__date">{dates}</p>
+                <h3 className="card__title">{title}</h3>
+                <p className="card__subtitle">{subtitle}</p>
               </div>
               {/*
                 The html inserted here is trusted as it is static content added by gatsby during
                 build time.
               */}
               {/* eslint-disable-next-line react/no-danger */}
-              <div className="card__body markdown" dangerouslySetInnerHTML={{ __html: html }} />
+              <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
             </section>
           );
         });

@@ -39,13 +39,13 @@ function SkillList() {
 
           return (
             <li key={id} className="card card--primary">
-              <b className="card__header">{title}</b>
+              <span className="card__title">{title}</span>
               {/*
                 The html inserted here is trusted as it is static content added by gatsby during
                 build time.
               */}
               {/* eslint-disable-next-line react/no-danger */}
-              <div className="card__body markdown" dangerouslySetInnerHTML={{ __html: html }} />
+              <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
             </li>
           );
         });
