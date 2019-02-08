@@ -2,8 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import PageMetadata from '../components/PageMetadata';
 import SkillList from '../components/SkillList';
-import EmploymentHistory from '../components/EmploymentHistory';
-import EducationHistory from '../components/EducationHistory';
+import OccupationHistory from '../components/OccupationHistory';
 import InterestList from '../components/InterestList';
 import '../styles/panel.scss';
 
@@ -29,13 +28,13 @@ export default () => (
       <section className="panel">
         <h2 className="panel__header">Employment</h2>
         <div className="panel__body">
-          <EmploymentHistory />
+          <OccupationHistory category="jobs" />
         </div>
       </section>
       <section className="panel">
         <h2 className="panel__header">Education</h2>
         <div className="panel__body">
-          <EducationHistory />
+          <OccupationHistory category="education" />
         </div>
       </section>
       <section className="panel">
