@@ -4,9 +4,9 @@ import Helmet from 'react-helmet';
 import Header from './Header';
 import Footer from './Footer';
 
-import '../styles/layout.scss';
 import 'typeface-ubuntu';
 import 'typeface-open-sans';
+import '../styles/layout.scss';
 
 const propTypes = {
   children: PropTypes.node,

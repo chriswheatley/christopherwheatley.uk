@@ -1,9 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
-import '../styles/history.scss';
-import '../styles/card.scss';
-import '../styles/markdown.scss';
 
 const propTypes = {
   /* The category used to filter all occupations */

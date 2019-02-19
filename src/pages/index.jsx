@@ -4,7 +4,6 @@ import PageMetadata from '../components/PageMetadata';
 import SkillList from '../components/SkillList';
 import OccupationHistory from '../components/OccupationHistory';
 import InterestList from '../components/InterestList';
-import '../styles/panel.scss';
 
 export default () => (
   <Layout>

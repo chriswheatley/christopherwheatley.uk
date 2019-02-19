@@ -1,6 +1,5 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import '../styles/markdown.scss';
 
 /**
  * Display all interest posts in list ordered alphabetically
