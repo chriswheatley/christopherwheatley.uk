@@ -14,10 +14,6 @@ function InterestList() {
               frontmatter: {
                 category: { eq: "interests" }
               }
-            },
-            sort: {
-              fields: [frontmatter___title],
-              order: ASC
             }
           ) {
             edges {
