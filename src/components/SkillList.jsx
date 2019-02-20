@@ -47,7 +47,7 @@ function SkillList() {
           );
         });
 
-        return <ul className="skill__list">{skillItems}</ul>;
+        return <ul className="grid">{skillItems}</ul>;
       }}
     />
   );

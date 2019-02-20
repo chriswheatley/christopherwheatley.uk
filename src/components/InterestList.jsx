@@ -52,7 +52,7 @@ function InterestList() {
           );
         });
 
-        return <ul className="skill__list">{interestItems}</ul>;
+        return <ul className="grid">{interestItems}</ul>;
       }}
     />
   );
