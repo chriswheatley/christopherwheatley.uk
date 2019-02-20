@@ -1,5 +1,6 @@
 ---
   category: interests
+  title: Baking
 ---
 
-Baking
+Cakes... Yum!

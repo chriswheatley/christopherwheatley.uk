@@ -1,5 +1,6 @@
 ---
   category: interests
+  title: Custom PC Builds
 ---
 
-Building and maintaining a personal computer.
+Selecting compatible components, building and maintaining computers.

@@ -1,5 +1,6 @@
 ---
   category: interests
+  title: Modern Web Development
 ---
 
-Modern web technologies. e.g Gatsby, React, CSS Grid and ES6 / ES7.
+Keeping up to date with new frameworks and new language features (e.g. CSS Grid).

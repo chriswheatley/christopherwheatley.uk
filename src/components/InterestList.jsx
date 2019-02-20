@@ -35,12 +35,19 @@ function InterestList() {
       render={({ allMarkdownRemark }) => {
         const interestItems = allMarkdownRemark.edges.map((edge) => {
           const { id, html } = edge.node;
-          /*
-           * The html inserted here is trusted as it is static content added by gatsby during
-           * build time.
-          */
-          // eslint-disable-next-line react/no-danger
-          return <li className="markdown" key={id} dangerouslySetInnerHTML={{ __html: html }} />;
+          const { title } = edge.node.frontmatter;
+
+          return (
+            <li className="markdown" key={id}>
+              <b>{title}</b>
+              {/*
+                The html inserted here is trusted as it is static content added by gatsby during
+                build time.
+              */}
+              {/* eslint-disable-next-line react/no-danger */}
+              <span dangerouslySetInnerHTML={{ __html: html }} />
+            </li>
+          );
         });
 
         return <ul>{interestItems}</ul>;
