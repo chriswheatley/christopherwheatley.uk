@@ -38,19 +38,21 @@ function InterestList() {
           const { title } = edge.node.frontmatter;
 
           return (
-            <li className="markdown" key={id}>
-              <b>{title}</b>
+            <li className="card" key={id}>
+              <div className="card__header">
+                <div className="card__title">{title}</div>
+              </div>
               {/*
                 The html inserted here is trusted as it is static content added by gatsby during
                 build time.
               */}
               {/* eslint-disable-next-line react/no-danger */}
-              <span dangerouslySetInnerHTML={{ __html: html }} />
+              <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
             </li>
           );
         });
 
-        return <ul>{interestItems}</ul>;
+        return <ul className="skill__list">{interestItems}</ul>;
       }}
     />
   );
