@@ -1,0 +1,51 @@
+
+.button {
+  $bg-color: #ccc;
+  $transition: 0.15s ease-in-out;
+
+  background-color: $bg-color;
+  border-radius: 100rem;
+  display: inline-block;
+  color: #000;
+  margin-right: .5rem;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  transition:
+    background-color $transition,
+    color $transition;
+
+  &:hover,
+  &:focus {
+    background-color: darken($bg-color, 10%);
+  }
+
+  &:active {
+    background-color: darken($bg-color, 15%);
+    box-shadow: inset 0 0 .3rem rgba(0, 0, 0, 0.5);;
+  }
+
+  &--cta {
+    $cta-bg-color: #fff;
+
+    background-color: $cta-bg-color;
+
+    &:hover,
+    &:focus {
+      background-color: darken($cta-bg-color, 10%)
+    }
+
+    &:active {
+      background-color: darken($cta-bg-color, 15%);
+    }
+  }
+
+  &--transparent-light {
+    background-color: transparent;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+}

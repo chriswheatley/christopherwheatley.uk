@@ -16,6 +16,23 @@ export default () => (
         <p className="panel__body">
           Developer with a degree in computer science and 4 years commercial experience using web
           technologies. Conscientious, comitted and friendly.
+          <div className="panel__actions">
+            <a
+              className="button button--cta"
+              href="about:blank"
+              rel="noopener noreferrer"
+            >
+              Send an Email
+            </a>
+            <a
+              className="button button--transparent-light"
+              href="about:blank"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Projects
+            </a>
+          </div>
         </p>
       </div>
       <section className="panel">
