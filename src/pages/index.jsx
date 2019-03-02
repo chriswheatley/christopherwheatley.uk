@@ -1,4 +1,8 @@
 import React from 'react';
+import {
+  FaEnvelope,
+  FaGithub,
+} from 'react-icons/fa';
 import Layout from '../components/Layout';
 import PageMetadata from '../components/PageMetadata';
 import SkillList from '../components/SkillList';
@@ -22,6 +26,7 @@ export default () => (
               href="about:blank"
               rel="noopener noreferrer"
             >
+              <FaEnvelope className="button__icon" />
               Send an Email
             </a>
             <a
@@ -30,6 +35,7 @@ export default () => (
               target="_blank"
               rel="noopener noreferrer"
             >
+              <FaGithub className="button__icon" />
               View Projects
             </a>
           </div>
