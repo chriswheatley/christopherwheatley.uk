@@ -3,16 +3,24 @@
   $bg-color: #ccc;
   $transition: 0.15s ease-in-out;
 
+  align-items:center;
   background-color: $bg-color;
   border-radius: 100rem;
-  display: inline-block;
   color: #000;
+  display: inline-flex;
+  flex-direction: row;
   margin-right: .5rem;
   padding: 1rem 1.5rem;
   text-decoration: none;
   transition:
     background-color $transition,
     color $transition;
+
+  &__icon {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: .5em;
+  }
 
   &:hover,
   &:focus {
