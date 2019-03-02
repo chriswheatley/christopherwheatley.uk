@@ -13,7 +13,7 @@ export default () => (
     <article>
       <div className="panel panel--pageHeader">
         <h1 className="panel__header">Christopher Wheatley</h1>
-        <p className="panel__body">
+        <div className="panel__body">
           Developer with a degree in computer science and 4 years commercial experience using web
           technologies. Conscientious, comitted and friendly.
           <div className="panel__actions">
@@ -33,7 +33,7 @@ export default () => (
               View Projects
             </a>
           </div>
-        </p>
+        </div>
       </div>
       <section className="panel">
         <h2 className="panel__header">Skills</h2>
