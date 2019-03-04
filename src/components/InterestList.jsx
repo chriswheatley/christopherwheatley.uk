@@ -15,6 +15,10 @@ function InterestList() {
                 category: { eq: "interests" }
               }
             }
+            sort: {
+              fields: frontmatter___order
+              order: ASC
+            }
           ) {
             edges {
               node {

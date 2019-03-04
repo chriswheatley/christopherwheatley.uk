@@ -16,6 +16,10 @@ function SkillList() {
                 category: { eq: "skills" }
               }
             }
+            sort: {
+              fields: frontmatter___order
+              order: ASC
+            }
           ) {
             edges {
               node {
