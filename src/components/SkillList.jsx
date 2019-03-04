@@ -35,7 +35,7 @@ function SkillList() {
           const { title } = edge.node.frontmatter;
 
           return (
-            <li key={id} className="card card--primary">
+            <li key={id} className="grid__item card card--primary">
               <span className="card__title">{title}</span>
               {/*
                 The html inserted here is trusted as it is static content added by gatsby during

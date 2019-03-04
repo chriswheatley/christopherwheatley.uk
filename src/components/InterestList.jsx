@@ -34,7 +34,7 @@ function InterestList() {
           const { title } = edge.node.frontmatter;
 
           return (
-            <li className="card" key={id}>
+            <li className="grid__item card" key={id}>
               <div className="card__header">
                 <div className="card__title">{title}</div>
               </div>

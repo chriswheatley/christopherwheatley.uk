@@ -1,19 +1,39 @@
 @import './colour';
 
+
 .grid {
-  list-style: none;
-  margin: 1rem 0 0 0;
+  margin: 0;
   padding: 0;
 
+  //Fallback for browsers that do not support CSS Grid
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 
-  // Use CSS Grid if supported.
+  &__item {
+    margin: 1rem 2rem 1rem 0;
+    width: 100%;
+
+    @media (min-width: 640px) {
+      width: calc(50% - 2rem);
+    }
+
+    @media (min-width: 960px) {
+      width: calc(33% - 2rem);
+    }
+  }
+
+  // Use CSS Grid if supported (as each cell will have the same height when on different rows).
   @supports (display: grid) {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-    grid-auto-rows: 1fr;
     gap: 2rem;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    margin: 1rem 0;
+
+    &__item {
+      margin: 0;
+      width: auto;
+    }
   }
 }
