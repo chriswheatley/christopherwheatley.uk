@@ -1,13 +1,11 @@
 import React from 'react';
-import {
-  FaEnvelope,
-  FaGithub,
-} from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import Layout from '../components/Layout';
 import PageMetadata from '../components/PageMetadata';
 import SkillList from '../components/SkillList';
 import OccupationHistory from '../components/OccupationHistory';
 import InterestList from '../components/InterestList';
+import ProtectedEmailLink from '../components/ProtectedEmailLink';
 
 export default () => (
   <Layout>
@@ -21,14 +19,7 @@ export default () => (
           Developer with a degree in computer science and 4 years commercial experience using web
           technologies. Conscientious, comitted and friendly.
           <div className="panel__actions">
-            <a
-              className="button button--cta"
-              href="about:blank"
-              rel="noopener noreferrer"
-            >
-              <FaEnvelope className="button__icon" />
-              Send an Email
-            </a>
+            <ProtectedEmailLink base64Email="Y2hyaXNAY2hyaXN0b3BoZXJ3aGVhdGxleS51aw==" />
             <a
               className="button button--transparent-light"
               href="about:blank"
