@@ -5,6 +5,18 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Christopher Wheatley',
+        short_name: 'Christopher Wheatley',
+        start_url: '/',
+        background_color: '#fff',
+        theme_color: '#5652c5',
+        icon: 'src/images/icon.png',
+        include_favicon: true,
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'data',
