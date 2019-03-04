@@ -3,4 +3,4 @@
   title: Custom PC Builds
 ---
 
-Selecting compatible components, building and maintaining computers.
+Enjoys building computers to custom specifications.

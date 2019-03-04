@@ -3,4 +3,4 @@
   title: Baking
 ---
 
-Cakes... Yum!
+Enjoys baking cakes... Yum!

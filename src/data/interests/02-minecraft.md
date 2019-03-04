@@ -2,5 +2,4 @@
   category: interests
   title: Minecraft
 ---
-
-Help run a private modded minecraft server for friends.
+Contributing to the maintenance of a private minecraft server for friends.
