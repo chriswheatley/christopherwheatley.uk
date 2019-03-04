@@ -5,6 +5,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: 'https://www.christopherwheatley.uk',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Christopher Wheatley',
