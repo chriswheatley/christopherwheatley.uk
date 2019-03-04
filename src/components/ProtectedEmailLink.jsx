@@ -33,7 +33,7 @@ class ProtectedEmailButton extends React.Component {
   onClick() {
     // Open a new email in the user's mail client.
     const { email } = this.state;
-    window.open(`mailto:${email}`, '_self', 'noopener, noreferrer');
+    window.location.href = `mailto:${email}`;
   }
 
   render() {
