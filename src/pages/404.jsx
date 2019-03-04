@@ -16,7 +16,7 @@ export default () => (
       <div className="panel__body">
         Sorry, the page you were looking for does not exist. This might be because:
         <ul>
-          <li>There might be a typo in the url or address bar.</li>
+          <li>There is a typo in the url or address bar.</li>
           <li>The page has been moved.</li>
           <li>The page has been deleted.</li>
           <li>The page has been removed temporarily.</li>
