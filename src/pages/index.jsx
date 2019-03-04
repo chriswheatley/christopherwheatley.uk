@@ -22,7 +22,7 @@ export default () => (
             <ProtectedEmailLink base64Email="Y2hyaXNAY2hyaXN0b3BoZXJ3aGVhdGxleS51aw==" />
             <a
               className="button button--transparent-light"
-              href="about:blank"
+              href="https://github.com/chriswheatley"
               target="_blank"
               rel="noopener noreferrer"
             >
