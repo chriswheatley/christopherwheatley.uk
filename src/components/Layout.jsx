@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import Header from './Header';
 import Footer from './Footer';
 
 import 'typeface-ubuntu';
@@ -22,7 +21,6 @@ function Layout({ children }) {
       <Helmet>
         <html lang="en-GB" />
       </Helmet>
-      <Header />
       <main className="layout__content">{ children }</main>
       <div className="layout__footer">
         <Footer />
