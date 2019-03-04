@@ -5,7 +5,7 @@
 
 @import './colour';
 .panel {
-  padding: 2rem 1.5rem;
+  padding: 2rem 1rem;
 
   &__header,
   &__body {
@@ -40,7 +40,8 @@
   }
 
   &__actions {
-    padding-top: 4rem;
+    align-content: center;
+    padding-top: 3rem;
     margin: 0 auto;
 
   }

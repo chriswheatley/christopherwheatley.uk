@@ -5,7 +5,7 @@
   endYear: 2010
 ---
 
-| Qualification Level | Subjects                                                                 |
+| Level               | Subject                                                                  |
 | --------------------| -------------------------------------------------------------------------|
 | A Level             | Biology (B), Computing (B), Physics (B)                                  |
 | AS Level            | Science in Society (A), Maths (C)                                        |
