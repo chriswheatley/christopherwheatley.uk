@@ -1,7 +1,7 @@
-Christopher Wheatley's Portfolio
+www.christopherwheatley.uk
 ==========================================================
 
-This project contains the source code for the website hosted at [christopherwheatley.uk](http://christopherwheatley.uk). The site is built using the static site generator [Gatsby](https://www.gatsbyjs.org/)
+This project contains the source code for the website hosted at [www.christopherwheatley.uk](http://www.christopherwheatley.uk). The site is built using the static site generator [Gatsby](https://www.gatsbyjs.org/)
 
 The site features the portfolio of Christopher Wheatley, a 
 software developer living in the south east of England.
