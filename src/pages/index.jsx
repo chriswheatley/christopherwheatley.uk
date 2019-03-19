@@ -17,7 +17,7 @@ export default () => (
         <h1 className="panel__header">Christopher Wheatley</h1>
         <div className="panel__body">
           Software Developer with a degree in computer science and 4 years commercial experience
-          using web technologies. Conscientious, comitted and friendly.
+          using web technologies. Conscientious, committed and friendly.
           <div className="panel__actions">
             <ProtectedEmailLink base64Email="Y2hyaXNAY2hyaXN0b3BoZXJ3aGVhdGxleS51aw==" />
             <a
