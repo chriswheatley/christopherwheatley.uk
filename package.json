@@ -10,7 +10,7 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "gatsby": "2.3.36",
+    "gatsby": "2.4.2",
     "gatsby-plugin-canonical-urls": "2.0.10",
     "gatsby-plugin-manifest": "2.0.21",
     "gatsby-plugin-react-helmet": "3.0.7",
