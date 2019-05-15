@@ -32,7 +32,7 @@ export default function useInterests() {
     `,
   );
 
-  return allMarkdownRemark.map((edge) => {
+  return allMarkdownRemark.edges.map((edge) => {
     const { html, id } = edge.node;
     return {
       ...edge.node.frontmatter,
