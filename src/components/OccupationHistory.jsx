@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StaticQuery, graphql } from 'gatsby';
+import useOccupations from '../hooks/useOccupations';
 
 const propTypes = {
   /* The category used to filter all occupations */
@@ -27,71 +27,33 @@ function OccupationHistory({ category }) {
     return `${organisation}, ${dates}`;
   }
 
-  return (
-    <StaticQuery
-      query={graphql`
-        query EmploymentHistoryQuery {
-          allMarkdownRemark (
-            filter: {
-              frontmatter: {
-                category: { in: ["jobs", "education"] }
-              }
-            }
-            sort: {
-              fields: [frontmatter___endYear]
-              order: DESC
-            }
-          ) {
-            edges {
-              node {
-                frontmatter {
-                  title
-                  category
-                  organisation
-                  startYear
-                  endYear
-                }
-                id
-                html
-              }
-            }
-          }
-        }
-      `}
-      render={(({ allMarkdownRemark }) => {
-        const items = allMarkdownRemark.edges.filter((edge) => {
-          // Filter all occupations by category.
-          const { frontmatter } = edge.node;
-          return frontmatter.category === category;
-        }).map((edge) => {
-          const { id, html } = edge.node;
-          const {
-            title,
-            organisation,
-            startYear,
-            endYear,
-          } = edge.node.frontmatter;
+  const occupations = useOccupations().filter(occupation => occupation.category === category);
+  const occupationNodes = occupations.map((occupation) => {
+    const { id, html } = occupation;
+    const {
+      title,
+      organisation,
+      startYear,
+      endYear,
+    } = occupation;
 
-          return (
-            <section key={id} className="card history-item">
-              <div className="card__header">
-                <h3 className="card__title">{title}</h3>
-                <div className="card__subtitle">{getSubtitle(organisation, startYear, endYear)}</div>
-              </div>
-              {/*
-                  The html inserted here is trusted as it is static content added by gatsby during
-                  build time.
-                */}
-              {/* eslint-disable-next-line react/no-danger */}
-              <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
-            </section>
-          );
-        });
+    return (
+      <section key={id} className="card history-item">
+        <div className="card__header">
+          <h3 className="card__title">{title}</h3>
+          <div className="card__subtitle">{getSubtitle(organisation, startYear, endYear)}</div>
+        </div>
+        {/*
+            The html inserted here is trusted as it is static content added by gatsby during
+            build time.
+          */}
+        {/* eslint-disable-next-line react/no-danger */}
+        <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
+      </section>
+    );
+  });
 
-        return items;
-      })}
-    />
-  );
+  return occupationNodes;
 }
 
 OccupationHistory.propTypes = propTypes;
