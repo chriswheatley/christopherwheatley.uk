@@ -1,0 +1,51 @@
+$skew: -2deg;
+$skew-origin: bottom left;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vh;
+
+  background-color: $primary-500;
+  color: white;
+
+  //MS Edge: Use skew instead of clip-path polygon() due to browser compatibility.
+  transform: skewY($skew);
+  transform-origin: $skew-origin;
+
+
+  &__content {
+    width: 100%;
+    max-width: 105rem;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+
+    //Correct for the skew in the parent element.
+    transform: skewY($skew * -1);
+    transform-origin: $skew-origin;
+  }
+
+  &__title {
+    margin: 0 0 1rem 0;
+
+    font-size: 4.5rem;
+    @media (min-width: 768px) {
+      font-size: 5.5rem;
+    }
+  }
+
+  &__lead {
+    max-width: 70rem;
+    margin: 1rem 0;
+
+    font-size: 1.8rem;
+    @media (min-width: 768px) {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__actions {
+    margin-top: 5rem;
+  }
+}

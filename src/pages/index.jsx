@@ -13,12 +13,14 @@ export default () => (
       description="Find out about Christopher Wheatley's skills, experience and qualifications in software development."
     />
     <article>
-      <div className="panel panel--pageHeader">
-        <h1 className="panel__header">Christopher Wheatley</h1>
-        <div className="panel__body">
-          Software Developer with a degree in computer science and 4 years commercial experience
-          using web technologies. Conscientious, committed and friendly.
-          <div className="panel__actions">
+      <div className="hero">
+        <div className="hero__content">
+          <h1 className="hero__title">Christopher Wheatley</h1>
+          <p className="hero__lead">
+            Software Developer with a degree in computer science and 4 years commercial experience
+            using web technologies. Conscientious, committed and friendly.
+          </p>
+          <div className="hero__actions">
             <ProtectedEmailLink base64Email="Y2hyaXNAY2hyaXN0b3BoZXJ3aGVhdGxleS51aw==" />
             <a
               className="button button--transparent-light"
