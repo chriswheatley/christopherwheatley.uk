@@ -5,11 +5,12 @@ $skew-origin: bottom left;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   min-height: 50vh;
+  padding: 0 1rem;
 
   background-color: $primary-500;
   color: white;
-
   //MS Edge: Use skew instead of clip-path polygon() due to browser compatibility.
   transform: skewY($skew);
   transform-origin: $skew-origin;
@@ -19,7 +20,7 @@ $skew-origin: bottom left;
     width: 100%;
     max-width: 105rem;
     margin: 0 auto;
-    padding: 4rem 1rem;
+    padding: 4rem 0;
 
     //Correct for the skew in the parent element.
     transform: skewY($skew * -1);
