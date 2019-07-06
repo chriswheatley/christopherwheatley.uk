@@ -26,9 +26,6 @@ $skew-origin: bottom left;
     transform-origin: $skew-origin;
 
     font-size: 1.8rem;
-    @media (min-width: 768px) {
-      font-size: 1.9rem;
-    }
   }
 
   &__title {
