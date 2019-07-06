@@ -19,16 +19,20 @@ $skew-origin: bottom left;
   &__content {
     width: 100%;
     max-width: 105rem;
-    margin: 0 auto;
-    padding: 4rem 0;
+    margin: 1rem auto;
 
     //Correct for the skew in the parent element.
     transform: skewY($skew * -1);
     transform-origin: $skew-origin;
+
+    font-size: 1.8rem;
+    @media (min-width: 768px) {
+      font-size: 1.9rem;
+    }
   }
 
   &__title {
-    margin: 0 0 1rem 0;
+    margin: 0;
 
     font-size: 4.5rem;
     @media (min-width: 768px) {
@@ -36,17 +40,27 @@ $skew-origin: bottom left;
     }
   }
 
-  &__lead {
+  &__list {
     max-width: 70rem;
     margin: 1rem 0;
+    padding: 0;
 
-    font-size: 1.8rem;
-    @media (min-width: 768px) {
-      font-size: 2.2rem;
+    list-style: none;
+
+    &-item {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row;
+
+      margin: .25rem 0;
     }
-  }
 
-  &__actions {
-    margin-top: 5rem;
+    &-icon {
+      flex-shrink: 0;
+
+      width: 1.5em;
+      height: 1.5em;
+      margin-right: 2rem;
+    }
   }
 }

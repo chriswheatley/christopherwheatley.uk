@@ -1,5 +1,10 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
+import {
+  FaComments,
+  FaGithub,
+  FaGraduationCap,
+  FaLaptopCode,
+} from 'react-icons/fa';
 import Layout from '../components/Layout';
 import PageMetadata from '../components/PageMetadata';
 import SkillList from '../components/SkillList';
@@ -16,22 +21,34 @@ export default () => (
       <div className="hero">
         <div className="hero__content">
           <h1 className="hero__title">Christopher Wheatley</h1>
-          <p className="hero__lead">
-            Software Developer with a degree in computer science and 4 years commercial experience
-            using web technologies. Conscientious, committed and friendly.
-          </p>
-          <div className="hero__actions">
-            <ProtectedEmailLink base64Email="Y2hyaXNAY2hyaXN0b3BoZXJ3aGVhdGxleS51aw==" />
-            <a
-              className="button button--transparent-light"
-              href="https://github.com/chriswheatley"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub className="button__icon" />
-              View Projects
-            </a>
-          </div>
+        </div>
+        <div className="hero__content">
+          <ul className="hero__list">
+            <li className="hero__list-item">
+              <FaLaptopCode className="hero__list-icon" />
+              <span>Software Developer with over 4 years commercial experience.</span>
+            </li>
+            <li className="hero__list-item">
+              <FaGraduationCap className="hero__list-icon" />
+              <span>Computer Science degree.</span>
+            </li>
+            <li className="hero__list-item">
+              <FaComments className="hero__list-icon" />
+              <span>Conscientious, comitted and friendly.</span>
+            </li>
+          </ul>
+        </div>
+        <div className="hero__content">
+          <ProtectedEmailLink className="hero--btn-radius" base64Email="Y2hyaXNAY2hyaXN0b3BoZXJ3aGVhdGxleS51aw==" />
+          <a
+            className="button button--transparent-light hero--btn-radius"
+            href="https://github.com/chriswheatley"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="button__icon" />
+            View Projects
+          </a>
         </div>
       </div>
       <section className="panel">
