@@ -4,6 +4,7 @@ import {
   FaGithub,
   FaGraduationCap,
   FaLaptopCode,
+  FaMapMarkerAlt,
 } from 'react-icons/fa';
 import Layout from '../components/Layout';
 import PageMetadata from '../components/PageMetadata';
@@ -21,6 +22,10 @@ export default () => (
       <div className="hero">
         <div className="hero__content">
           <h1 className="hero__title">Christopher Wheatley</h1>
+          <div className="hero__list-item">
+            <FaMapMarkerAlt className="hero__list-icon" />
+            <span>United Kingdom</span>
+          </div>
         </div>
         <div className="hero__content">
           <ul className="hero__list">
