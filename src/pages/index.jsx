@@ -1,5 +1,11 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
+import {
+  FaComments,
+  FaGithub,
+  FaGraduationCap,
+  FaLaptopCode,
+  FaMapMarkerAlt,
+} from 'react-icons/fa';
 import Layout from '../components/Layout';
 import PageMetadata from '../components/PageMetadata';
 import SkillList from '../components/SkillList';
@@ -13,23 +19,41 @@ export default () => (
       description="Find out about Christopher Wheatley's skills, experience and qualifications in software development."
     />
     <article>
-      <div className="panel panel--pageHeader">
-        <h1 className="panel__header">Christopher Wheatley</h1>
-        <div className="panel__body">
-          Software Developer with a degree in computer science and 4 years commercial experience
-          using web technologies. Conscientious, committed and friendly.
-          <div className="panel__actions">
-            <ProtectedEmailLink base64Email="Y2hyaXNAY2hyaXN0b3BoZXJ3aGVhdGxleS51aw==" />
-            <a
-              className="button button--transparent-light"
-              href="https://github.com/chriswheatley"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub className="button__icon" />
-              View Projects
-            </a>
+      <div className="hero">
+        <div className="hero__content">
+          <h1 className="hero__title">Christopher Wheatley</h1>
+          <div className="hero__list-item">
+            <FaMapMarkerAlt className="hero__list-icon" />
+            <span>United Kingdom</span>
           </div>
+        </div>
+        <div className="hero__content">
+          <ul className="hero__list">
+            <li className="hero__list-item">
+              <FaLaptopCode className="hero__list-icon" />
+              <span>Software Developer with over 4 years commercial experience.</span>
+            </li>
+            <li className="hero__list-item">
+              <FaGraduationCap className="hero__list-icon" />
+              <span>Computer Science degree.</span>
+            </li>
+            <li className="hero__list-item">
+              <FaComments className="hero__list-icon" />
+              <span>Conscientious, comitted and friendly.</span>
+            </li>
+          </ul>
+        </div>
+        <div className="hero__content">
+          <ProtectedEmailLink className="hero--btn-radius" base64Email="Y2hyaXNAY2hyaXN0b3BoZXJ3aGVhdGxleS51aw==" />
+          <a
+            className="button button--transparent-light hero--btn-radius"
+            href="https://github.com/chriswheatley"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="button__icon" />
+            View Projects
+          </a>
         </div>
       </div>
       <section className="panel">
