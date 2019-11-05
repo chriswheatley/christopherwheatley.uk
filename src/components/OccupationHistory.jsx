@@ -27,7 +27,7 @@ function OccupationHistory({ category }) {
     return `${organisation}, ${dates}`;
   }
 
-  const occupations = useOccupations().filter(occupation => occupation.category === category);
+  const occupations = useOccupations().filter((occupation) => occupation.category === category);
   const occupationNodes = occupations.map((occupation) => {
     const { id, html } = occupation;
     const {
