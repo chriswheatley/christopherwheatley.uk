@@ -3,7 +3,7 @@
   "description": "source for christopherwheatley.uk",
   "private": true,
   "scripts": {
-    "lint": "eslint --fix --ext .js --ext .jsx .",
+    "lint": "eslint --ext .js --ext .jsx .",
     "test": "echo \"Warning! No tests specified\"",
     "develop": "gatsby develop",
     "build": "gatsby build",
