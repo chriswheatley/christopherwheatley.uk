@@ -10,29 +10,29 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "gatsby": "2.18.10",
-    "gatsby-plugin-canonical-urls": "2.1.13",
-    "gatsby-plugin-manifest": "2.2.26",
-    "gatsby-plugin-react-helmet": "3.1.13",
-    "gatsby-plugin-sass": "2.1.20",
-    "gatsby-plugin-sitemap": "2.2.19",
-    "gatsby-source-filesystem": "2.1.35",
-    "gatsby-transformer-remark": "2.6.32",
+    "gatsby": "2.19.12",
+    "gatsby-plugin-canonical-urls": "2.1.20",
+    "gatsby-plugin-manifest": "2.2.41",
+    "gatsby-plugin-react-helmet": "3.1.22",
+    "gatsby-plugin-sass": "2.1.28",
+    "gatsby-plugin-sitemap": "2.2.27",
+    "gatsby-source-filesystem": "2.1.48",
+    "gatsby-transformer-remark": "2.6.50",
     "node-sass": "4.13.1",
     "prop-types": "15.7.2",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-helmet": "5.2.1",
-    "react-icons": "3.8.0",
+    "react-icons": "3.9.0",
     "typeface-open-sans": "0.0.75",
     "typeface-ubuntu": "0.0.65"
   },
   "devDependencies": {
     "babel-eslint": "10.0.3",
-    "eslint": "6.6.0",
+    "eslint": "6.8.0",
     "eslint-config-airbnb": "18.0.1",
-    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-import": "2.20.1",
     "eslint-plugin-jsx-a11y": "6.2.3",
-    "eslint-plugin-react": "7.16.0"
+    "eslint-plugin-react": "7.18.3"
   }
 }
