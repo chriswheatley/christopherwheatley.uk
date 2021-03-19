@@ -13,7 +13,7 @@ import OccupationHistory from '../components/OccupationHistory';
 import InterestList from '../components/InterestList';
 import ProtectedEmailLink from '../components/ProtectedEmailLink';
 
-export default () => (
+const IndexPage = () => (
   <Layout>
     <PageMetadata
       description="Find out about Christopher Wheatley's skills, experience and qualifications in software development."
@@ -83,3 +83,5 @@ export default () => (
     </article>
   </Layout>
 );
+
+export default IndexPage;

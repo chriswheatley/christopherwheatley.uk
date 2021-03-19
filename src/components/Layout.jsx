@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Footer from './Footer';
 
-import 'typeface-ubuntu';
-import 'typeface-open-sans';
+import '@fontsource/ubuntu/latin.css';
+import '@fontsource/open-sans/latin.css';
 import '../styles/layout.scss';
 
 const propTypes = {

@@ -4,7 +4,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import Layout from '../components/Layout';
 import PageMetadata from '../components/PageMetadata';
 
-export default () => (
+const NotFoundPage = () => (
   <Layout>
     <PageMetadata title="Not Found" />
     <div className="panel panel--pageHeader">
@@ -29,3 +29,5 @@ export default () => (
     </div>
   </Layout>
 );
+
+export default NotFoundPage;
