@@ -4,7 +4,7 @@ import {
   FaGithub,
   FaGraduationCap,
   FaLaptopCode,
-  FaMapMarkerAlt,
+  FaEye,
 } from 'react-icons/fa';
 import Layout from '../components/Layout';
 import PageMetadata from '../components/PageMetadata';
@@ -16,30 +16,33 @@ import ProtectedEmailLink from '../components/ProtectedEmailLink';
 const IndexPage = () => (
   <Layout>
     <PageMetadata
-      description="Find out about Christopher Wheatley's skills, experience and qualifications in software development."
+      description="Christopher Wheatley is a software developer in the united kingdom with 4 years' commercial experience in web development."
     />
     <article>
       <div className="hero">
         <div className="hero__content">
           <h1 className="hero__title">Christopher Wheatley</h1>
           <div className="hero__list-item">
-            <FaMapMarkerAlt className="hero__list-icon" />
-            <span>United Kingdom</span>
+            <span>Software Developer, United Kingdom</span>
           </div>
         </div>
         <div className="hero__content">
           <ul className="hero__list">
             <li className="hero__list-item">
-              <FaLaptopCode className="hero__list-icon" />
-              <span>Software Developer with over 4 years commercial experience.</span>
-            </li>
-            <li className="hero__list-item">
               <FaGraduationCap className="hero__list-icon" />
               <span>Computer Science degree.</span>
             </li>
             <li className="hero__list-item">
+              <FaLaptopCode className="hero__list-icon" />
+              <span>4 years&apos; commercial experience.</span>
+            </li>
+            <li className="hero__list-item">
               <FaComments className="hero__list-icon" />
-              <span>Conscientious, comitted and friendly.</span>
+              <span>Friendly and committed.</span>
+            </li>
+            <li className="hero__list-item">
+              <FaEye className="hero__list-icon" />
+              <span>Eye for &lsquo;pixel-perfect&rsquo; detail.</span>
             </li>
           </ul>
         </div>
@@ -57,13 +60,13 @@ const IndexPage = () => (
         </div>
       </div>
       <section className="panel">
-        <h2 className="panel__header">Skills</h2>
+        <h2 className="panel__header">Skills & Achievements</h2>
         <div className="panel__body">
           <SkillList />
         </div>
       </section>
       <section className="panel">
-        <h2 className="panel__header">Employment</h2>
+        <h2 className="panel__header">Career History</h2>
         <div className="panel__body">
           <OccupationHistory category="jobs" />
         </div>

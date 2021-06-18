@@ -4,4 +4,4 @@
   order: 1
 ---
 
-Able to write clean and maintainable code.
+Focus on code readability.
