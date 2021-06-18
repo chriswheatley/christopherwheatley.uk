@@ -25,12 +25,7 @@ module.exports = {
         include_favicon: true,
       },
     },
-    {
-      resolve: 'gatsby-plugin-sitemap',
-      options: {
-        sitemapSize: 5000,
-      },
-    },
+    'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
