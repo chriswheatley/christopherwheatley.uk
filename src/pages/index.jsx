@@ -54,7 +54,7 @@ const IndexPage = () => (
           <ProtectedEmailLink className="hero--btn-radius" base64Email="Y2hyaXNAY2hyaXN0b3BoZXJ3aGVhdGxleS51aw==" />
           <a
             className="button button--transparent-light hero--btn-radius"
-            href="https://github.com/chriswheatley"
+            href="https://github.com/chriswheatley?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
           >
