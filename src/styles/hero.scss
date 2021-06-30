@@ -1,29 +1,22 @@
-$skew: -2deg;
-$skew-origin: bottom left;
-
 .hero {
+  $padding-top-bottom: 6vh;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  padding: 6vh 1rem;
+  padding: $padding-top-bottom 1rem;
 
   background-color: $primary-500;
   color: white;
-  //MS Edge: Use skew instead of clip-path polygon() due to browser compatibility.
-  transform: skewY($skew);
-  transform-origin: $skew-origin;
 
+  // Add an upwards slant to the bottom edge, which should be contained within the bottom padding
+  // of the element.
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - #{$padding-top-bottom * .5}), 0 100%);
 
   &__content {
     width: 100%;
     max-width: 105rem;
     margin: 1rem auto;
-
-    //Correct for the skew in the parent element.
-    transform: skewY($skew * -1);
-    transform-origin: $skew-origin;
-
     font-size: 1.7rem;
   }
 
