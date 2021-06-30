@@ -4,4 +4,4 @@
   order: 1
 ---
 
-Focus on code readability.
+Focusing on code readability.

@@ -33,4 +33,4 @@ HTML 5 Canvas and AngularJS.
 
 - **Independent Worker**
 
-  Worked independently since February 2017.
+  Worked independently at home from February 2017.

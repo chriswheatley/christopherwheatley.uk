@@ -1,5 +1,5 @@
 ---
-  title: Research and analyse
+  title: Research and Analysis
   category: skills
   order: 2
 ---

@@ -3,6 +3,6 @@
   category: skills
   order: 5
 ---
-- Developed a personal website.
-- Active learning new technologies.
+- Built a personal website using Gatsby (A React based framework).
+- Learning modern technologies (e.g., CSS Grid).
 - Family Support.

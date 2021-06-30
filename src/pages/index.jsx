@@ -38,13 +38,17 @@ const IndexPage = () => (
             </li>
             <li className="hero__list-item">
               <FaComments className="hero__list-icon" />
-              <span>Friendly and committed.</span>
+              <span>Committed team worker.</span>
             </li>
             <li className="hero__list-item">
               <FaEye className="hero__list-icon" />
-              <span>Eye for &lsquo;pixel-perfect&rsquo; detail.</span>
+              <span>Eye for pixel-perfect detail.</span>
             </li>
           </ul>
+        </div>
+        <div className="hero__content">
+          Looking for a full-time position in front-end or back-end development at a
+          company with strong ethics and a progressive environment.
         </div>
         <div className="hero__content">
           <ProtectedEmailLink className="hero--btn-radius" base64Email="Y2hyaXNAY2hyaXN0b3BoZXJ3aGVhdGxleS51aw==" />
