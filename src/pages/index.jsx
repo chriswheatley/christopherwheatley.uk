@@ -13,11 +13,14 @@ import OccupationHistory from '../components/OccupationHistory';
 import InterestList from '../components/InterestList';
 import ProtectedEmailLink from '../components/ProtectedEmailLink';
 
+const pageDescription = [
+  'Christopher Wheatley is a software developer in the UK with 4 years\' commercial',
+  'experience. He is a committed team worker with an eye for pixel-perect detail.',
+].join(' ');
+
 const IndexPage = () => (
   <Layout>
-    <PageMetadata
-      description="Christopher Wheatley is a software developer in the united kingdom with 4 years' commercial experience in web development."
-    />
+    <PageMetadata description={pageDescription} />
     <article>
       <div className="hero">
         <div className="hero__content">
