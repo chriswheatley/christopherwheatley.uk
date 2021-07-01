@@ -4,7 +4,7 @@ import {
   FaGithub,
   FaGraduationCap,
   FaLaptopCode,
-  FaMapMarkerAlt,
+  FaEye,
 } from 'react-icons/fa';
 import Layout from '../components/Layout';
 import PageMetadata from '../components/PageMetadata';
@@ -13,41 +13,51 @@ import OccupationHistory from '../components/OccupationHistory';
 import InterestList from '../components/InterestList';
 import ProtectedEmailLink from '../components/ProtectedEmailLink';
 
+const pageDescription = [
+  'Christopher Wheatley is a software developer in the UK with 4 years\' commercial',
+  'experience. He is a committed team worker with an eye for pixel-perect detail.',
+].join(' ');
+
 const IndexPage = () => (
   <Layout>
-    <PageMetadata
-      description="Find out about Christopher Wheatley's skills, experience and qualifications in software development."
-    />
+    <PageMetadata description={pageDescription} />
     <article>
       <div className="hero">
         <div className="hero__content">
           <h1 className="hero__title">Christopher Wheatley</h1>
           <div className="hero__list-item">
-            <FaMapMarkerAlt className="hero__list-icon" />
-            <span>United Kingdom</span>
+            <span>Software Developer, United Kingdom</span>
           </div>
         </div>
         <div className="hero__content">
           <ul className="hero__list">
             <li className="hero__list-item">
-              <FaLaptopCode className="hero__list-icon" />
-              <span>Software Developer with over 4 years commercial experience.</span>
-            </li>
-            <li className="hero__list-item">
               <FaGraduationCap className="hero__list-icon" />
               <span>Computer Science degree.</span>
             </li>
             <li className="hero__list-item">
+              <FaLaptopCode className="hero__list-icon" />
+              <span>4 years&apos; commercial experience.</span>
+            </li>
+            <li className="hero__list-item">
               <FaComments className="hero__list-icon" />
-              <span>Conscientious, comitted and friendly.</span>
+              <span>Committed team worker.</span>
+            </li>
+            <li className="hero__list-item">
+              <FaEye className="hero__list-icon" />
+              <span>Eye for pixel-perfect detail.</span>
             </li>
           </ul>
+        </div>
+        <div className="hero__content">
+          Looking for a full-time position in front-end or back-end development at a
+          company with strong ethics and a progressive environment.
         </div>
         <div className="hero__content">
           <ProtectedEmailLink className="hero--btn-radius" base64Email="Y2hyaXNAY2hyaXN0b3BoZXJ3aGVhdGxleS51aw==" />
           <a
             className="button button--transparent-light hero--btn-radius"
-            href="https://github.com/chriswheatley"
+            href="https://github.com/chriswheatley?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -57,13 +67,13 @@ const IndexPage = () => (
         </div>
       </div>
       <section className="panel">
-        <h2 className="panel__header">Skills</h2>
+        <h2 className="panel__header">Skills & Achievements</h2>
         <div className="panel__body">
           <SkillList />
         </div>
       </section>
       <section className="panel">
-        <h2 className="panel__header">Employment</h2>
+        <h2 className="panel__header">Career History</h2>
         <div className="panel__body">
           <OccupationHistory category="jobs" />
         </div>

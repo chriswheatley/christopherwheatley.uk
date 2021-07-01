@@ -6,30 +6,31 @@
   endYear: 2018
 ---
 
-Lighthouse Learning provides services to schools and individuals in the ed-tech sector. This has
-included iOS apps built with web technologies and an online subscription service.
+Lighthouse Learning was a provider of educational software to schools and individuals. Achieved
+through multiple iOS apps and an online subscription service built using web technologies such as
+HTML 5 Canvas and AngularJS.
 
 **Achievements**
 
 - **Multi-disciplined collaboration**
 
-  As a trusted member of the development team, the position involved working with the company
-  directors, sales assistants, artists and content producers.
+  Trusted member of the development team. The position involved collaborating with company
+  directors, sales assistants, artists, and content producers.
 
 - **Key contributor**
 
-  Member of multiple software development projects, including several iOS Apps, an online
+  Member of multiple software development projects, including multiple iOS Apps, an online
   subscription service and internal CRM / CMS systems.
 
-- **Best practices**
+- **Code Quality Advocate**
 
-  Actively encouraged the adoption of better practices such as unit testing, code quality
-  improvements and more.
+  Active in promoting codebase improvements such as refactoring to removing duplicated code and
+  improve performance.
 
 - **Adaptable**
 
-  Quickly learned new technologies, such as AngularJS, Amazon Web Services, Node.JS and more.
+  Quickly learned modern technologies such as Amazon Web Services, AngularJS, NodeJS and more.
 
-- **Self Motivator**
+- **Independent Worker**
 
-  Worked independently since February 2017.
+  Worked independently at home from February 2017.

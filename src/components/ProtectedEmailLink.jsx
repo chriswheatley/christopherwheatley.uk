@@ -11,8 +11,8 @@ const propTypes = {
 };
 
 /**
- * Displays a button labelled with an email address. The button employs a couple of
- * techniques to hide the email address from email harvesting bots to significantly
+ * A button that opens a new email in the user's preferred email client. The button employs a
+ * couple of techniques to hide the email address from email harvesting bots to significantly
  * reduce the amount of spam received.
  */
 class ProtectedEmailButton extends React.Component {
@@ -51,9 +51,6 @@ class ProtectedEmailButton extends React.Component {
       );
     }
 
-    // Render the email address button.
-    const emailReversed = email.split('').reverse().join('');
-
     return (
       <button
         className="button button--cta"
@@ -61,7 +58,7 @@ class ProtectedEmailButton extends React.Component {
         type="button"
       >
         <FaEnvelope className="button__icon" />
-        <span className="protected-email">{emailReversed}</span>
+        <span>Contact via Email</span>
       </button>
     );
   }

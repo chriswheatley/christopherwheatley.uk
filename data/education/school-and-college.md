@@ -9,4 +9,4 @@
 | --------------------| -------------------------------------------------------------------------|
 | A Level             | Biology (B), Computing (B), Physics (B)                                  |
 | AS Level            | Science in Society (A), Maths (C)                                        |
-| GCSE                | 9 subject grades A* - B including English (B), Maths (A) and Science (A) |
+| GCSE                | 9 subject grades A* - B                                                  |

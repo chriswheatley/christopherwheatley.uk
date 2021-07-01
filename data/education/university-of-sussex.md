@@ -6,7 +6,7 @@
   endYear: 2013
 ---
 
-**Courses include:** Software Engineering, Web Computing, Human Computer Interaction and Further
+**Courses:** Software Engineering, Web Computing, Human Computer Interaction and Further
 Programming.
 
 **Achievements:**

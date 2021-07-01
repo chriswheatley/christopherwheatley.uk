@@ -5,4 +5,4 @@
   endYear: 2013
 ---
 
-Part time work undertaken alongside studies, roles include customer facing responsibilities.
+Part time work undertaken alongside studies which included customer facing responsibilities.
