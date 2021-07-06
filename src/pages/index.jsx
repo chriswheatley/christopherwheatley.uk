@@ -15,7 +15,7 @@ import ProtectedEmailLink from '../components/ProtectedEmailLink';
 
 const pageDescription = [
   'Christopher Wheatley is a software developer in the UK with 4 years\' commercial',
-  'experience. He is a committed team worker with an eye for pixel-perect detail.',
+  'experience. He is a committed team worker with an eye for detail.',
 ].join(' ');
 
 const IndexPage = () => (
